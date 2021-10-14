@@ -23,7 +23,7 @@ public class FollowCam : MonoBehaviour
         // 부드러운 회전을 위한 Mathf.LerpAngle
         float currYAngle = Mathf.LerpAngle(tr.eulerAngles.y, target.eulerAngles.y, smoothRotate * Time.deltaTime);
 
-        // 오일러 타입을 쿼터나인으로 바꾸기
+        // 오일러 타입을 쿼터니언으로 바꾸기
         Quaternion rot = Quaternion.Euler(0, currYAngle, 0);
 
         // 카메라 위치를 타겟 회전각도만큼 회전 후 dist만 큼 띄우고, 높이를 올리기
